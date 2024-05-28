@@ -32,7 +32,7 @@ export default function NavLinks() {
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
-          <link
+          <Link
             key={link.name}
             href={link.href}
             className={clsx(
@@ -44,7 +44,7 @@ export default function NavLinks() {
           >
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
-          </link>
+          </Link>
         );
       })}
     </>
